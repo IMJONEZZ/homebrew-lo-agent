@@ -3,9 +3,9 @@ require "language/python"
 class LoAgent < Formula
   desc "Agent harness that exploits local-LLM advantages: determinism, logit control, KV branching, free tokens"
   homepage "https://github.com/IMJONEZZ/lo-agent"
-  url "https://github.com/IMJONEZZ/lo-agent/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "08cd7b7da778906c72d7cc636f814f18154920c5a0047b24bb3ece470aed69aa"
-  version "0.1.0"
+  url "https://github.com/IMJONEZZ/lo-agent/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "e1e5d340599ca7b9556e4aeb8338392f7817a6db5c03b5e26ffa6ef485c5c207"
+  version "0.1.1"
   license "MIT"
 
   depends_on "python@3.13"
@@ -24,6 +24,6 @@ class LoAgent < Formula
   end
 
   test do
-    assert_match "harness", shell_output("#{bin}/harness --help")
+    assert_match "lo", shell_output("#{bin}/lo --help")
   end
 end

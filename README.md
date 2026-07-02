@@ -22,6 +22,9 @@ lo-agent is an agent harness built around the advantages local and self-hosted L
 brew tap IMJONEZZ/lo-agent
 ```
 
+(Homebrew asks you to trust a personal tap on first use — that prompt is
+expected; confirm to proceed.)
+
 ### Install lo-agent
 
 ```bash
@@ -32,16 +35,16 @@ brew install lo-agent
 
 ```bash
 # Probe your server's capabilities
-harness probe --url http://localhost:8080
+lo probe --url http://localhost:8080
 
 # Run an agent task
-harness run "Use the calculator tool to compute 17*23 plus 100."
+lo run "Use the calculator tool to compute 17*23 plus 100."
 
 # Start the TUI
-harness tui
+lo tui --url http://localhost:8080
 
 # Start the proxy
-harness proxy --url http://localhost:8080 --port 8088
+lo proxy --url http://localhost:8080 --port 8088
 ```
 
 ## uv Installation

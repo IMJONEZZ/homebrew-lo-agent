@@ -1,8 +1,8 @@
 class LoAgent < Formula
   desc "Agent harness for local-LLM advantages: determinism, logits, KV branching"
   homepage "https://github.com/IMJONEZZ/lo-agent"
-  url "https://github.com/IMJONEZZ/lo-agent/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "f49cd7c8d1d6b35a66bbe41b63238b8a0bc99a19004ba723157f1deb26ca7b89"
+  url "https://github.com/IMJONEZZ/lo-agent/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "bac33e779c6f17094ca67224f7e6c068a4817729d37d3b92802ec9b7e10ed874"
   license "MIT"
 
   depends_on "uv" => :build
